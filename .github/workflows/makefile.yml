@@ -18,8 +18,11 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get install libx11-dev
+        sudo apt-get install libxext-dev
         cd linuxdoom-1.10 
         mkdir linux
-        make all
+        
+    - name: Run check
+      run: make all
 
 
