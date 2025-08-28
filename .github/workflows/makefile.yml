@@ -17,6 +17,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        sudo apt-get install libx11-dev
         cd linuxdoom-1.10 
         mkdir linux
         make all
