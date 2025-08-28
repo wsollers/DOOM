@@ -18,6 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         cd linuxdoom-1.10 
+        mkdir linux
         make all
 
 
