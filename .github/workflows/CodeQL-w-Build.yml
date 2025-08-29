@@ -9,7 +9,7 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL Advanced"
+name: "CodeQL -W- Build Default Queries"
 
 on:
   push:
@@ -93,7 +93,7 @@ jobs:
         cd linuxdoom-1.10 
         mkdir linux
         make all
-        exit 1
+        exit 0
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
